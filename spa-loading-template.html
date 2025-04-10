@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="accept-ch" content="DPR" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <style>
+    .loader{
+      position: fixed;
+      inset: 0rem;
+      display: grid;
+      place-items: center;
+      background-color: white;
+      z-index: 50;
+    }
+    .loader__img{
+      width: 4.5rem;
+      animation: bounce 1s linear infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      }
+      50% {
+        transform: translateY(0);
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <img src="/image.png" class="loader__img"/>
+  </div>
+</body>
+</html>
