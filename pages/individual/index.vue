@@ -2,7 +2,7 @@
   <div class="min-h-screen bg-gray-50 py-12">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between">
-        <nuxt-link to="/"><span>Back</span></nuxt-link>
+        <nuxt-link to="/"><span>Back Home</span></nuxt-link>
      <h1 class="text-3xl font-bold text-center mb-8">Individual Account Creation</h1>
       </div>
       
