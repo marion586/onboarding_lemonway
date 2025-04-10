@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   },
   routeRules: {
     '/api/oauth/**': { 
-      redirect: { to: 'https://sandbox-api.lemonway.fr/oauth/**' } 
+      proxy: { to: 'https://sandbox-api.lemonway.fr/oauth/**' } 
     },
     '/api/business/**': { 
       proxy: { to: process.env.LEMONWAY_API_URL + '/**' } 
